@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Hello World') {
             steps {
-                echo 'GitHub nundi Jenkinsfile success ga run ayyindi!'
+                echo 'GitHub--jenkins!'
             }
         }
     }

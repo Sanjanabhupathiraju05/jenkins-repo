@@ -1,9 +1,21 @@
 pipeline {
     agent any 
+
     stages {
-        stage('Hello World') {
+        stage('Checkout') {
             steps {
-                echo 'GitHub--jenkins!'
+                echo 'GitHub nundi code lakkuntunnam...'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Application ni build chesthunnam... (Imagine Maven/Docker here)'
+                sh 'uptime' // Ikkada oka real linux command run chesthunnam!
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing started... 100% Success!'
             }
         }
     }

@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Application'
+                echo 'Application-webhook'
                 sh 'uptime'
             }
         }

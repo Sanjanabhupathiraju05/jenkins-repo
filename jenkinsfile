@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'GitHub nundi code lakkuntunnam...'
+                echo 'checkout'
             }
         }
         stage('Build') {
             steps {
-                echo 'Application ni build chesthunnam... (Imagine Maven/Docker here)'
-                sh 'uptime' // Ikkada oka real linux command run chesthunnam!
+                echo 'Application'
+                sh 'uptime'
             }
         }
         stage('Test') {
